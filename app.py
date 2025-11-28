@@ -60,4 +60,4 @@ def get_group_logs(group_id):
 
 if __name__ == "__main__":
     # Local testing only. In the cloud we use gunicorn instead.
-    gunicorn.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
