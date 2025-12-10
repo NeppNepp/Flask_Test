@@ -35,16 +35,20 @@ def receive_data():
     data = request.get_json()
 
     ax = float(data["ax"])
+    ay = float(data["ay"])
     az = float(data["az"])
     gx = float(data["gx"])
+    gy = float(data["gy"])
     gz = float(data["gz"])
     ts = float(data.get("timestamp", time.time()))
 
     point = (
         Point("imu_data")
         .field("ax", ax)
+        .field("ay", ay)
         .field("az", az)
         .field("gx", gx)
+        .field("gy", gy)
         .field("gz", gz)
         .time(int(ts * 1e9))  # nanoseconds
     )
