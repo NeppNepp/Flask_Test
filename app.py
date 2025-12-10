@@ -10,7 +10,7 @@ app = Flask(__name__)
 # -------------------------------
 
 INFLUX_URL = "https://us-east-1-1.aws.cloud2.influxdata.com"
-INFLUX_TOKEN = "PASTE_YOUR_TOKEN_HERE"
+INFLUX_TOKEN = ${{ secrets.API_TOKEN_INFLUXDB }} 
 INFLUX_ORG = "Robotic-Labwork"
 INFLUX_BUCKET = "unoq_sensor_data"
 
