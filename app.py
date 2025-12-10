@@ -9,10 +9,10 @@ app = Flask(__name__)
 # ✅ INFLUXDB CONFIG (SET THESE)
 # -------------------------------
 
-INFLUX_URL = "https://us-east-1-1.aws.cloud2.influxdata.com"
-INFLUX_TOKEN = "UuazYa64wWR-2ZuW4qm2JN-N8vYz2bN2vthBeqqARTDPHOFtLOvm2mPX64W21nTLOjnC07Ez-3w1g7bfSmU4xw=="
-INFLUX_ORG = "Robotic-Labwork"
-INFLUX_BUCKET = "unoq_sensor_data"
+INFLUX_URL = os.environ["INFLUX_URL"]
+INFLUX_TOKEN = os.environ["INFLUX_TOKEN"]
+INFLUX_ORG = os.environ["INFLUX_ORG"]
+INFLUX_BUCKET = os.environ["INFLUX_BUCKET"]
 
 client = InfluxDBClient(
     url=INFLUX_URL,
