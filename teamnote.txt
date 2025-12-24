@@ -1,2 +1,2 @@
 For pull and merge example
-Secound Line for pull which likely to create a conflict
+First line create for conflict
