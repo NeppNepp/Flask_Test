@@ -1,2 +1,2 @@
 For pull and merge example
-First line for commit 1
+Secound Line for pull which likely to create a conflict
